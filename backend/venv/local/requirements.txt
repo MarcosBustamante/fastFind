@@ -1,0 +1,1 @@
+/home/iury/PycharmProjects/fastFind/backend/venv/requirements.txt
