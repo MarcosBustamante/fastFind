@@ -1,0 +1,18 @@
+.config-view-comment{
+    padding: 10px 0;
+}
+
+.textarea-size{
+    width: 100%;
+    height: 75px;
+}
+
+.forum-avatar {
+	border: 3px solid #fff;
+	height: 60px;
+	width: 60px;
+}
+
+.comment-top-15{
+    padding-top: 15px;
+}

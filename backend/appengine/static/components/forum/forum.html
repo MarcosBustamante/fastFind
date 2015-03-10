@@ -1,0 +1,33 @@
+<div>
+    <div class="row list-view dark-background config-view-comment">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center white">
+            <div>
+                <img ng-src="{[{ FF.user.avatar }]}" class="img-circle forum-avatar" />
+            </div>
+            <span class="more-information">{[{ FF.user.name }]}</span>
+            <span class="more-information">{[{ FF.user.lastName }]}</span>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 text-right">
+            <textarea class="textarea-size" ng-model="comment" ng-click="showButtons()"></textarea>
+            <button class="btn btn-sm btn-default" ng-click="dirtyComment()" ng-show="buttonsStatus">
+                Apagar
+            </button>
+            <button class="btn btn-sm btn-default" ng-click="saveComment()" ng-show="buttonsStatus">
+                Enviar
+            </button>
+        </div>
+    </div>
+
+
+    <div class="row list-view set-margin config-view-comment" ng-repeat="comment in comments">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+            <div><img ng-src="{[{ comment.img }]}" class="img-circle forum-avatar" /></div>
+            <span class="more-information">{[{ comment.name }]}</span>
+            <span class="more-information">{[{ comment.lastName }]}</span>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 comment-top-15">
+            <span ng-hide="comment.isEdit" ng-bind="comment.comment"></span>
+        </div>
+    </div>
+</div>

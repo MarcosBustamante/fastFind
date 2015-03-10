@@ -1,0 +1,50 @@
+.white{
+    color: #ffffff;
+}
+
+.bg-light_green{
+	background-color: #efe;
+}
+
+.ff-box-shadow{
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.padding-left-0{
+    padding-left: 0 !important;
+}
+
+.list-style-none{
+    list-style: none;
+}
+
+.shadow-box {
+    box-shadow: 6px 6px 5px #888888;
+}
+
+.list-view{
+    box-shadow: 2px 2px 5px #888888;
+    padding: 10px 30px 10px 30px;
+	background-color: #cec;
+    margin: 2% 0;
+}
+
+.list-view.set-margin{
+    margin-top: 10px;
+}
+
+.list-view.dark-background{
+    background-color:#2E8B57;
+}

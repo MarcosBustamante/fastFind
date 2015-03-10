@@ -1,0 +1,11 @@
+.title-product-slid{
+	font-family: "times new roman", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 40px;
+}
+
+.image-slid{
+	max-width: 300px;
+	max-height: 300px;
+	margin:auto;
+}
+

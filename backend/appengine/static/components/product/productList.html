@@ -1,0 +1,17 @@
+<div class="list-view">
+    <div class = "product-list zebra row"
+         ng-repeat="product in products | orderBy:sel_mode:true"
+         ng-click="pm.select(product)"
+         ng-class="{'selected': product.selected}">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+            <img ng-src="{[{product.images[0]}]}" class="image-list img-thumbnail" />
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+            <p>{[{product.name}]}</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+            <p id="text_distance_price_product"><b>{[{product.price}]}</b></p>
+            <p>{[{product.distance}]}</p>
+        </div>
+    </div>
+</div>

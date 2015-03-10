@@ -7,7 +7,5 @@ from gaepermission.decorator import login_not_required
 
 @login_not_required
 @no_csrf
-def index(_resp):
-    _resp.write('Marcos')
-    # return TemplateResponse()
-
+def index():
+    return TemplateResponse()

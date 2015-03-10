@@ -1,46 +1,68 @@
 {% extends 'base/base.html' %}
-{% block css %}
-    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap-social.css"/>
-    <link rel="stylesheet" href="/static/font-awesome-4.2.0/css/font-awesome.min.css"/>
+{% block title %}
+    FastFind - Home
 {% endblock %}
-{% block body %}
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Tekton</h1>
-                <p>{% trans %}A Full-Stack project for Google App Engine{% endtrans %}</p>
-            </div>
+
+{% block css %}
+    <link rel="stylesheet" href="/static/components/product/productList.css" />
+    <link rel="stylesheet" href="/static/components/forum/forum.css" />
+    <link rel="stylesheet" href="/static/components/slide/slide.css" />
+{% endblock %}
+
+{% block js %}
+    <script src="/static/components/product/productModel.js"></script>
+    <script src="/static/js/api/productApi.js"></script>
+    <script src="/static/js/controllers/homeCtrl.js"></script>
+    <script src="/static/components/product/productList.js"></script>
+    <script src="/static/components/forum/forum.js"></script>
+    <script src="/static/components/slide/slide.js"></script>
+    <script src="/static/components/store/store.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="row" ng-controller="HomeCtrl">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <!--ng-show="isListView.getListOrBlock() == 'list'">-->
+            <fast-slide interval="interval"
+                        images="pm.getSelectedProduct().images"
+                        title="{[{ pm.getSelectedProduct().name }]}">
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center" style="margin-top: 10px">
+                    <button class="btn btn-small btn-default" ng-click="showMap()">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                        <span>Mapa</span>
+                    </button>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center" style="margin-top: 10px">
+                    <button class="btn btn-small btn-default btn-circle" ng-click="toggleStore()">
+                        <i class="glyphicon glyphicon-info-sign"></i>
+                        <span>Loja</span>
+                    </button>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center" style="margin-top: 10px">
+                    <button class="btn btn-small btn-default" ng-click="toggleForum()">
+                        <i class="glyphicon glyphicon-comment" ng-hide="showForum"></i>
+                        <i class="glyphicon glyphicon-list" ng-show="showForum"></i>
+                        <span ng-show="showForum">Lista</span>
+                        <span ng-hide="showForum">Chat</span>
+                    </button>
+                </div>
+            </fast-slide>
+
+            <store collapse="showInformation"
+                   product-selected="pm.getSelectedProduct()">
+            </store>
         </div>
-        <br/>
 
-        <div class="row">
-            <div class="col-md-6">
-                <div class="well">
-                    <h2>{% trans %}Create CRUD code on
-                        <a href="https://cloud.google.com/products/app-engine/">App Engine</a>{% endtrans %}
-                    </h2>
-                    <br/>
-
-                    <p>
-                        <a href="/courses" class="btn btn-primary"></i>{% trans %} Check Courses App
-                            Out{% endtrans %} &raquo;</a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="well">
-                    <h2>{% trans %}Tekton is open source.{% endtrans %}</h2>
-                    <br/>
-
-                    <p>
-                        <a href="https://github.com/renzon/tekton-fullstack" class="btn btn-social btn-github"><i
-                                class="fa fa-github"></i>{% trans %}Check Git Hub Out{% endtrans %} &raquo;</a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 col-md-offset-3">
-                <iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PLA05yVJtRWYRGIeBxag8uT-3ftcMVT5oF" frameborder="0" allowfullscreen></iframe>
-            </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <!--ng-show="isListView.getListOrBlock() == 'list'">-->
+            <forum ng-show="showForum"
+                   comments="pm.getSelectedProduct().comment">
+            </forum>
+            <product-list ng-hide="showForum"
+                          products="products">
+            </product-list>
+        <!--<div ng-hide="isListView.getListOrBlock() == 'list'">-->
+            <!--<product-block products="products"></product-block>-->
+        <!--</div>-->
         </div>
     </div>
 {% endblock %}
