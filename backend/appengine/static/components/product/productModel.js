@@ -131,14 +131,6 @@ angular.module('FastFindApp').factory('ProductModel', function(){
             }
         ];
 
-    //    ProductApi.list().success(function(result){
-    //        console.log('success');
-    //        console.log(result);
-    //    }).error(function(result){
-    //        console.log('error');
-    //    }).finally(function(){
-    //        console.log('finally');
-    //    })
         select(products[0]);
         return products;
     };

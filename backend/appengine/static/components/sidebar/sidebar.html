@@ -10,16 +10,16 @@
             </div>
         </li>
         <li class="row" ng-hide="isLogged">
-            <a class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+            <a href="/login" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
                ng-click="isLogged = true">
                 <i class="white glyphicon glyphicon-log-in"></i>
                 <label> Login </label>
             </a>
         </li>
         <li class="row" ng-repeat="icon in icons">
-            <a class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a href="{[{ icon.link }]}" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <span class="white glyphicon {[{ icon.img }]}"></span>
-                <label> {[{ icon.label }]} </label>
+                <label style="cursor: pointer"> {[{ icon.label }]} </label>
             </a>
         </li>
     </ul>

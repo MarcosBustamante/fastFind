@@ -1,7 +1,7 @@
 /**
  * Created by iury on 3/8/15.
  */
-angular.module('FastFindApp').controller('HomeCtrl', function($scope, ProductApi, ProductModel){
+angular.module('FastFindApp').controller('HomeCtrl', function($scope, ProductModel){
     var pm = $scope.pm = ProductModel;
     $scope.products = pm.find('xbox');
     $scope.showForum = false;

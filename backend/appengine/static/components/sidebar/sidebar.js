@@ -30,20 +30,24 @@ angular.module('FastFindApp').directive('fastSidebar', function(){
             $scope.icons = [
                 {
                     img: 'glyphicon-home',
-                    label: 'Home'
+                    label: 'Home',
+                    link: '/home'
                 },
                 {
                     img: 'glyphicon-heart',
-                    label: 'Lista de Desejos'
+                    label: 'Lista de Desejos',
+                    link: '/desejos'
                 },
                 {
                     img: 'glyphicon-star',
-                    label: 'Lista de Compra'
+                    label: 'Lista de Compra',
+                    link: '/comprados'
                 },
-                {
-                    img: 'glyphicon-question-sign',
-                    label: 'Quem somos'
-                },
+                //{
+                //    img: 'glyphicon-question-sign',
+                //    label: 'Quem somos',
+                //    link: '/historia'
+                //}
             ]
         }
     }

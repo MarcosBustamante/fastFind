@@ -2,7 +2,7 @@
     <div class="col-lg-12, col-md-12 col-sm-12 col-xs-12">
         <label class="title-product-slid">{[{ title }]}</label>
         <carousel interval="interval">
-            <slide ng-repeat="image in images" style="height: 300px">
+            <slide ng-repeat="image in images track by $index" style="height: 300px">
                 <img  class="image-slid" ng-src="{[{ image }]}">
             </slide>
         </carousel>

@@ -78,7 +78,17 @@
     color: #999999;
 }
 
+.sidebar-nav li label {
+    cursor: pointer;
+}
+
 .sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.active {
     text-decoration: none;
     color: #fff;
     background: rgba(255,255,255,0.2);
