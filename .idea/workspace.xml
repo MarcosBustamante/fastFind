@@ -2,81 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b853dcf-c993-427e-9df0-1cc942311bfb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/routes/comprados/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/routes/desejos/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/routes/historia/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/js/controllers/compradosCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/js/controllers/desejosCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/js/controllers/historiaCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/templates/comprados/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/templates/desejos/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/routes/comprados/home.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/routes/desejos/home.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/routes/historia/home.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/less/variables.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/appengine/static/js/api/productApi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.2.0/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.2.0/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.2.0/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.2.0/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.2.0/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.2.0/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/appengine/templates/_home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/appengine/templates/base/_base.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/appengine/static/js/controllers/fastFindApp.js" afterPath="$PROJECT_DIR$/backend/appengine/static/js/controllers/fastFindCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.2.0/css/font-awesome.css" afterPath="$PROJECT_DIR$/backend/appengine/static/lib/font-awesome-4.3.0/css/font-awesome.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/appengine/templates/login/facebook/form.html" afterPath="$PROJECT_DIR$/backend/appengine/templates/_login/facebook/form.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/appengine/templates/login/home.html" afterPath="$PROJECT_DIR$/backend/appengine/templates/_login/home.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/appengine/templates/login/passwordless/form.html" afterPath="$PROJECT_DIR$/backend/appengine/templates/_login/passwordless/form.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/appengine/templates/login/passwordless/home.html" afterPath="$PROJECT_DIR$/backend/appengine/templates/_login/passwordless/home.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/appengine/templates/login/pending.html" afterPath="$PROJECT_DIR$/backend/appengine/templates/_login/pending.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/components/product/block/productBlock.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/components/product/block/productBlock.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/appengine/static/components/product/block/productBlock.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/appengine/static/components/product/productList.css" afterPath="$PROJECT_DIR$/backend/appengine/static/components/product/list/productList.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/appengine/static/components/product/productList.html" afterPath="$PROJECT_DIR$/backend/appengine/static/components/product/list/productList.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/appengine/static/components/product/productList.js" afterPath="$PROJECT_DIR$/backend/appengine/static/components/product/list/productList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/venv/lib/python2.7/site-packages/pip-1.5.4.dist-info/RECORD" afterPath="$PROJECT_DIR$/backend/venv/lib/python2.7/site-packages/pip-1.5.4.dist-info/RECORD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/venv/lib/python2.7/site-packages/setuptools-2.2.dist-info/RECORD" afterPath="$PROJECT_DIR$/backend/venv/lib/python2.7/site-packages/setuptools-2.2.dist-info/RECORD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/routes/api/__init__.py" afterPath="$PROJECT_DIR$/backend/appengine/routes/api/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/routes/api/product/__init__.py" afterPath="$PROJECT_DIR$/backend/appengine/routes/api/product/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/routes/comprados/__init__.py" afterPath="$PROJECT_DIR$/backend/appengine/routes/comprados/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/routes/desejos/__init__.py" afterPath="$PROJECT_DIR$/backend/appengine/routes/desejos/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/routes/historia/__init__.py" afterPath="$PROJECT_DIR$/backend/appengine/routes/historia/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/venv/bin/activate.csh" afterPath="$PROJECT_DIR$/backend/venv/bin/activate.csh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/venv/bin/activate.fish" afterPath="$PROJECT_DIR$/backend/venv/bin/activate.fish" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/venv/bin/activate" afterPath="$PROJECT_DIR$/backend/venv/bin/activate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/css/base.css" afterPath="$PROJECT_DIR$/backend/appengine/static/css/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/templates/base/base.html" afterPath="$PROJECT_DIR$/backend/appengine/templates/base/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/js/controllers/compradosCtrl.js" afterPath="$PROJECT_DIR$/backend/appengine/static/js/controllers/compradosCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/js/web/config.js" afterPath="$PROJECT_DIR$/backend/appengine/static/js/web/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/js/controllers/desejosCtrl.js" afterPath="$PROJECT_DIR$/backend/appengine/static/js/controllers/desejosCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/venv/bin/easy_install-2.7" afterPath="$PROJECT_DIR$/backend/venv/bin/easy_install-2.7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/venv/bin/easy_install" afterPath="$PROJECT_DIR$/backend/venv/bin/easy_install" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/js/controllers/fastFindCtrl.js" afterPath="$PROJECT_DIR$/backend/appengine/static/js/controllers/fastFindCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/js/web/fasthttp.js" afterPath="$PROJECT_DIR$/backend/appengine/static/js/web/fasthttp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/js/controllers/historiaCtrl.js" afterPath="$PROJECT_DIR$/backend/appengine/static/js/controllers/historiaCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/templates/home.html" afterPath="$PROJECT_DIR$/backend/appengine/templates/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/templates/comprados/home.html" afterPath="$PROJECT_DIR$/backend/appengine/templates/comprados/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/templates/desejos/home.html" afterPath="$PROJECT_DIR$/backend/appengine/templates/desejos/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/templates/login/home.html" afterPath="$PROJECT_DIR$/backend/appengine/templates/login/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/routes/api/product/home.py" afterPath="$PROJECT_DIR$/backend/appengine/routes/api/product/home.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/js/controllers/homeCtrl.js" afterPath="$PROJECT_DIR$/backend/appengine/static/js/controllers/homeCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/components/navbar/navbar.css" afterPath="$PROJECT_DIR$/backend/appengine/static/components/navbar/navbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/components/navbar/navbar.html" afterPath="$PROJECT_DIR$/backend/appengine/static/components/navbar/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/components/product/productList.html" afterPath="$PROJECT_DIR$/backend/appengine/static/components/product/productList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/components/navbar/navbar.js" afterPath="$PROJECT_DIR$/backend/appengine/static/components/navbar/navbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/venv/bin/pip2.7" afterPath="$PROJECT_DIR$/backend/venv/bin/pip2.7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/venv/bin/pip2" afterPath="$PROJECT_DIR$/backend/venv/bin/pip2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/components/product/productModel.js" afterPath="$PROJECT_DIR$/backend/appengine/static/components/product/productModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.css" afterPath="$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/venv/bin/pybabel" afterPath="$PROJECT_DIR$/backend/venv/bin/pybabel" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.html" afterPath="$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.js" afterPath="$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/components/slide/slide.html" afterPath="$PROJECT_DIR$/backend/appengine/static/components/slide/slide.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/components/slide/slide.js" afterPath="$PROJECT_DIR$/backend/appengine/static/components/slide/slide.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/appengine/static/components/store/store.js" afterPath="$PROJECT_DIR$/backend/appengine/static/components/store/store.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fastFind.iws" />
@@ -94,7 +60,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/fastFind$Unnamed.coverage" NAME="FastFind Coverage Results" MODIFIED="1424481064168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/appengine" />
-    <SUITE FILE_PATH="coverage/fastFind$FastFind.coverage" NAME="FastFind Coverage Results" MODIFIED="1427157859934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/appengine" />
+    <SUITE FILE_PATH="coverage/fastFind$FastFind.coverage" NAME="FastFind Coverage Results" MODIFIED="1427242992932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/appengine" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -107,48 +73,7 @@
     <favorites_list name="fastFind" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/appengine/templates/login/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.666666" vertical-offset="0" max-vertical-offset="1656">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="354" max-vertical-offset="1080">
-              <caret line="27" column="34" selection-start-line="45" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36548224" vertical-offset="0" max-vertical-offset="591">
-              <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="13" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slide.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/slide/slide.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="324">
-              <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -173,7 +98,6 @@
         <option value="$PROJECT_DIR$/backend/appengine/static/components/store/store.js" />
         <option value="$PROJECT_DIR$/backend/appengine/static/css/shop-information.css" />
         <option value="$PROJECT_DIR$/backend/appengine/static/components/store/store.html" />
-        <option value="$PROJECT_DIR$/backend/appengine/static/components/product/productList.html" />
         <option value="$PROJECT_DIR$/backend/appengine/static/components/navbar/navbar.css" />
         <option value="$PROJECT_DIR$/backend/appengine/static/components/slide/slide.js" />
         <option value="$PROJECT_DIR$/backend/appengine/static/components/slide/slide.html" />
@@ -189,14 +113,24 @@
         <option value="$PROJECT_DIR$/backend/appengine/static/js/controllers/desejosCtrl.js" />
         <option value="$PROJECT_DIR$/backend/appengine/static/js/controllers/historiaCtrl.js" />
         <option value="$PROJECT_DIR$/backend/appengine/static/js/controllers/compradosCtrl.js" />
-        <option value="$PROJECT_DIR$/backend/appengine/templates/comprados/home.html" />
-        <option value="$PROJECT_DIR$/backend/appengine/templates/desejos/home.html" />
-        <option value="$PROJECT_DIR$/backend/appengine/templates/home.html" />
-        <option value="$PROJECT_DIR$/backend/appengine/templates/login/home.html" />
-        <option value="$PROJECT_DIR$/backend/appengine/templates/base/base.html" />
         <option value="$PROJECT_DIR$/backend/appengine/templates/historia/home.html" />
         <option value="$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.js" />
         <option value="$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.html" />
+        <option value="$PROJECT_DIR$/backend/appengine/static/components/product/productList.css" />
+        <option value="$PROJECT_DIR$/backend/appengine/templates/login/home.html" />
+        <option value="$PROJECT_DIR$/backend/appengine/templates/home.html" />
+        <option value="$PROJECT_DIR$/backend/appengine/static/components/product/productList.html" />
+        <option value="$PROJECT_DIR$/backend/appengine/static/components/product/productBlock.css" />
+        <option value="$PROJECT_DIR$/backend/appengine/static/components/product/productBlock.js" />
+        <option value="$PROJECT_DIR$/backend/appengine/static/components/product/productBlock.html" />
+        <option value="$PROJECT_DIR$/backend/appengine/static/components/product/block/productBlock.css" />
+        <option value="$PROJECT_DIR$/backend/appengine/static/css/base.css" />
+        <option value="$PROJECT_DIR$/backend/appengine/templates/base/base.html" />
+        <option value="$PROJECT_DIR$/backend/appengine/static/components/product/block/productBlock.html" />
+        <option value="$PROJECT_DIR$/backend/appengine/static/components/product/block/productBlock.js" />
+        <option value="$PROJECT_DIR$/backend/appengine/templates/desejos/home.html" />
+        <option value="$PROJECT_DIR$/backend/appengine/templates/comprados/home.html" />
+        <option value="$PROJECT_DIR$/backend/appengine/routes/api/__init__.py" />
       </list>
     </option>
   </component>
@@ -251,6 +185,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,6 +254,80 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastFind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastFind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desejos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastFind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastFind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comprados" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastFind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastFind" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appengine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -375,7 +384,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="slide" />
+              <option name="myItemId" value="product" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,13 +414,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sidebar" />
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="block" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -437,21 +449,26 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/appengine/static/components/product" />
       <recent name="$PROJECT_DIR$/backend/appengine/static/lib" />
       <recent name="$PROJECT_DIR$/backend/appengine/static/js/controllers" />
       <recent name="$PROJECT_DIR$/backend/appengine/routes" />
       <recent name="$PROJECT_DIR$/backend/appengine/templates" />
-      <recent name="$PROJECT_DIR$/backend/appengine/static/lib/bootstrap" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/appengine/static/components/product/list" />
+      <recent name="$PROJECT_DIR$/backend/appengine/static/components/product/block" />
       <recent name="$PROJECT_DIR$/backend/appengine/templates/desejo" />
       <recent name="$PROJECT_DIR$/backend/appengine/static/components/slide" />
       <recent name="$PROJECT_DIR$/backend/appengine/static/components/product" />
-      <recent name="$PROJECT_DIR$/backend/appengine/static/js/api" />
-      <recent name="$PROJECT_DIR$/backend/appengine/routes/api" />
     </key>
   </component>
   <component name="RunManager" selected="App Engine server.FastFind">
+    <configuration default="false" name="home.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/fastFind/templates/login/home.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -680,11 +697,20 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="App Engine server.FastFind" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1b853dcf-c993-427e-9df0-1cc942311bfb" name="Default" comment="" />
@@ -696,10 +722,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="24" width="1307" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3271605" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39814815" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -709,7 +735,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2815226" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29103887" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -749,47 +775,12 @@
           <line>6</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/backend/appengine/routes/api/product/home.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/product/productModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="2826">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1008">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/forum/forum.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="936">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/forum/forum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="684">
-          <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/forum/forum.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="414">
@@ -801,14 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="550" max-vertical-offset="1008">
           <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/product/productList.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10557185" vertical-offset="0" max-vertical-offset="828">
-          <caret line="2" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -851,7 +834,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/product/productList.js">
+    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/product/list/productList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="618">
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
@@ -866,20 +849,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/static/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1008">
-          <caret line="36" column="10" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/store/store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#0#37#0" expanded="false" />
+            <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,19 +881,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/product/productList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="396">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/appengine/static/lib/bootstrap/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="38088">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -926,7 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2088">
           <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -934,7 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09137056" vertical-offset="0" max-vertical-offset="591">
           <caret line="3" column="14" selection-start-line="0" selection-start-column="4" selection-end-line="3" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,7 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.60679615" vertical-offset="1083" max-vertical-offset="2682">
           <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,7 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21799308" vertical-offset="0" max-vertical-offset="578">
           <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -958,7 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6743516" vertical-offset="0" max-vertical-offset="1548">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -966,9 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3" vertical-offset="0" max-vertical-offset="360">
           <caret line="6" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#80#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,9 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="360">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#80#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -986,15 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/product/productModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2700">
-          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +957,7 @@
         <state vertical-scroll-proportion="0.3546798" vertical-offset="0" max-vertical-offset="406">
           <caret line="10" column="18" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="18" />
           <folding>
-            <element signature="e#0#37#0" expanded="false" />
+            <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1020,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="618">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,7 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="618">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,9 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
           <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,25 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
           <caret line="3" column="55" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/templates/comprados/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/templates/desejos/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="540">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1080,7 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1854">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,7 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="605">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1096,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="32526">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1104,23 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15570934" vertical-offset="0" max-vertical-offset="2214">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="6" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34256056" vertical-offset="108" max-vertical-offset="1314">
-          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/templates/base/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39593908" vertical-offset="0" max-vertical-offset="936">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,21 +1029,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08737864" vertical-offset="0" max-vertical-offset="618">
           <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/templates/login/home.html">
+    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.666666" vertical-offset="0" max-vertical-offset="1656">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.61741424" vertical-offset="0" max-vertical-offset="558">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/slide/slide.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="324">
+        <state vertical-scroll-proportion="0.23746702" vertical-offset="0" max-vertical-offset="379">
           <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
           <folding />
         </state>
@@ -1150,16 +1050,123 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="354" max-vertical-offset="1080">
+        <state vertical-scroll-proportion="0.32512316" vertical-offset="354" max-vertical-offset="1080">
           <caret line="27" column="34" selection-start-line="45" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/sidebar/sidebar.html">
+    <entry file="file://$PROJECT_DIR$/backend/appengine/lib/tekton/router.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36548224" vertical-offset="0" max-vertical-offset="591">
-          <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="13" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1993" max-vertical-offset="3474">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/product/productModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2700">
+          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/product/list/productList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/product/list/productList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="396">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/product/block/productBlock.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="1080">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.74074" vertical-offset="79" max-vertical-offset="1314">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="45" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/static/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9029126" vertical-offset="0" max-vertical-offset="1062">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/templates/base/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70050764" vertical-offset="324" max-vertical-offset="936">
+          <caret line="41" column="74" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/templates/login/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6764706" vertical-offset="491" max-vertical-offset="1818">
+          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/product/block/productBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="618">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/templates/comprados/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37370244" vertical-offset="0" max-vertical-offset="578">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/templates/desejos/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5177665" vertical-offset="0" max-vertical-offset="591">
+          <caret line="17" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/routes/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="618">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/appengine/static/components/product/block/productBlock.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04918033" vertical-offset="0" max-vertical-offset="1062">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
           <folding />
         </state>
       </provider>

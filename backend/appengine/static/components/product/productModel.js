@@ -1,5 +1,5 @@
 /**
- * Created by iury on 3/8/15.
+ * Created by bustamante on 3/8/15.
  */
 angular.module('FastFindApp').factory('ProductModel', function(){
     var products;

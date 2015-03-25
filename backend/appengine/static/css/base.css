@@ -29,6 +29,9 @@
 .list-style-none{
     list-style: none;
 }
+.overflow-auto{
+    overflow: auto;
+}
 
 .shadow-box {
     box-shadow: 6px 6px 5px #888888;

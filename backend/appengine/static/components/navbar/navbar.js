@@ -1,5 +1,5 @@
 /**
- * Created by iury on 3/5/15.
+ * Created by bustamante on 3/5/15.
  */
 angular.module('FastFindApp').directive('fastNavbar', function(){
     return {

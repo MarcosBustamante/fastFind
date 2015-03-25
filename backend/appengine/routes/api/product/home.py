@@ -1,4 +1,4 @@
-__author__ = 'iury'
+__author__ = 'bustamante'
 from gaecookie.decorator import no_csrf
 from config.template_middleware import TemplateResponse
 

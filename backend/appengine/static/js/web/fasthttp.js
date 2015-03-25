@@ -1,5 +1,5 @@
 /**
- * Created by iury on 3/8/15.
+ * Created by bustamante on 3/8/15.
  */
 angular.module('ajax', []);
 angular.module('ajax').factory('Ajax', function($http){

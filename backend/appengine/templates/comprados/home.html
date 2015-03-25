@@ -1,24 +1,21 @@
 {% extends 'base/base.html' %}
 
 {% block title %}
-    FastFind - Lista de Comprados
+    FastFind - Lista de Desejos
 {% endblock %}
 
 {% block css %}
-    <link rel="stylesheet" href="/static/components/product/productList.css" />
+    <link rel="stylesheet" href="/static/components/product/block/productBlock.css" />
 {% endblock %}
 
 {% block js %}
     <script src="/static/components/product/productModel.js"></script>
     <script src="/static/js/controllers/compradosCtrl.js"></script>
-    <script src="/static/components/product/productList.js"></script>
+    <script src="/static/components/product/block/productBlock.js"></script>
 {% endblock %}
 
 {% block content %}
     <div ng-controller="CompradosCtrl">
-        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1"> <!--ng-show="isListView.getListOrBlock() == 'list'">-->
-            <h1>Lista de Comprados</h1>
-            <product-list products="products"></product-list>
-        </div>
+        <product-block products="products" title="Minhas Compras"></product-block>
     </div>
 {% endblock %}

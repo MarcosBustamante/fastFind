@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block css %}
-    <link rel="stylesheet" href="/static/components/product/productList.css" />
+    <link rel="stylesheet" href="/static/components/product/list/productList.css" />
     <link rel="stylesheet" href="/static/components/forum/forum.css" />
     <link rel="stylesheet" href="/static/components/slide/slide.css" />
 {% endblock %}
@@ -12,7 +12,7 @@
 {% block js %}
     <script src="/static/components/product/productModel.js"></script>
     <script src="/static/js/controllers/homeCtrl.js"></script>
-    <script src="/static/components/product/productList.js"></script>
+    <script src="/static/components/product/list/productList.js"></script>
     <script src="/static/components/forum/forum.js"></script>
     <script src="/static/components/slide/slide.js"></script>
     <script src="/static/components/store/store.js"></script>
@@ -20,7 +20,7 @@
 
 {% block content %}
     <div class="row" ng-controller="HomeCtrl">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <!--ng-show="isListView.getListOrBlock() == 'list'">-->
+        <div class="col-lg-6 col-md-6 hidden-xs hidden-sm"> <!--ng-show="isListView.getListOrBlock() == 'list'">-->
             <fast-slide interval="interval"
                         images="pm.getSelectedProduct().images"
                         title="{[{ pm.getSelectedProduct().name }]}">
@@ -52,7 +52,7 @@
             </store>
         </div>
 
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <!--ng-show="isListView.getListOrBlock() == 'list'">-->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <!--ng-show="isListView.getListOrBlock() == 'list'">-->
             <forum ng-show="showForum"
                    comments="pm.getSelectedProduct().comment">
             </forum>

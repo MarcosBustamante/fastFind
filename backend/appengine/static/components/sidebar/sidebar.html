@@ -1,6 +1,6 @@
 <div id="sidebar-wrapper" ng-class="{'toggled': sbm.isOpen()}">
     <ul class="sidebar-nav">
-        <li ng-show="isLogged">
+        <li ng-show="false">
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 ">
                 <img src="{[{ FF.user.avatar }]}" class="img-responsive img-size img-circle" />
             </div>
@@ -9,7 +9,7 @@
                 <p class="name"> {[{ FF.user.lastName }]} </p>
             </div>
         </li>
-        <li class="row" ng-hide="isLogged">
+        <li class="row" ng-hide="false">
             <a href="/login" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
                ng-click="isLogged = true">
                 <i class="white glyphicon glyphicon-log-in"></i>

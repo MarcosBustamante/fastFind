@@ -1,5 +1,5 @@
 /**
- * Created by iury on 3/6/15.
+ * Created by bustamante on 3/6/15.
  */
 angular.module('FastFindApp').factory('SidebarModel', function(){
     var status = true;
