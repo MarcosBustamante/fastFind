@@ -17,20 +17,21 @@
     <script src="/static/lib/angular/js/ui-bootstrap-angular.min.js"></script>
     <script src="/static/lib/jquery/js/jquery-1.11.1.min.js"></script>
     <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/js/web/jsutils.js"></script>
+    <script src="/static/js/web/ajax.js"></script>
     <script src="/static/js/web/config.js"></script>
-    <script src="/static/js/web/fasthttp.js"></script>
     <script src="/static/js/controllers/fastFindCtrl.js"></script>
     <script src="/static/components/sidebar/sidebar.js"></script>
     <script src="/static/components/navbar/navbar.js"></script>
     {% block js %}{% endblock %}
 
     <script>
-        window.FF = {
-            user: {
-                avatar: '/static/img/grazi.jpg',
-                name: 'Grazzi',
-                lastName: 'Massafera'
-            }
+        if(!window.FF)
+            window.FF = {};
+
+        window.FF.user = {{user|safe if user else {} }};
+        if(jsutils.object_is_empty(window.FF.user)){
+            window.FF.user = undefined;
         }
     </script>
 </head>

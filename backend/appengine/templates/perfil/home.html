@@ -1,0 +1,65 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    FastFind - Perfil
+{% endblock %}
+
+{% block js %}
+    <script src="/static/js/controllers/perfilCtrl.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="row clearfix" ng-controller="PerfilCtrl">
+        <div class="col-md-12 column">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-3 column">
+                    <div class="row margin-20-0">
+                        <div class="col-md-12 column text-center">
+                            <img ng-src="{[{user.avatar}]}"/>
+                            <br>
+                            <div class="fileUpload btn btn-dark">
+                                <i class="glyphicon glyphicon-search"></i>
+                                <span>Procura</span>
+                                <input type="file" class="upload" ng-model="user.avatar"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margin-20-0">
+                        <div class="col-md-12 column text-center">
+                            <button class="btn btn-default" ng-click="save()">
+                                <i class="glyphicon glyphicon-floppy-disk"></i>
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 column">
+                    <div class="row">
+                        <div class="col-md-12 column">
+                            <div class="form-group">
+                                <label class="control-label">Nome</label>
+                                <input type="text" class="form-control" ng-model="user.name"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 column">
+                            <div class="form-group">
+                                <label class="control-label">Email</label>
+                                <input type="text" class="form-control" ng-model="user.email"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 column">
+                            <div class="form-group">
+                                <label class="control-label">Nascimento</label>
+                                <input type="date" class="form-control" ng-model="user.birth"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

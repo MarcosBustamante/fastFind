@@ -1,43 +1,36 @@
 {% extends 'base/base.html' %}
 
+{% block js %}
+    <script src="/static/js/controllers/loginCtrl.js"></script>
+    <script src="/static/js/api/userApi.js"></script>
+{% endblock %}
+
 {% block content %}
-<div class="row" style="margin-top: calc(100vh - 90vh);">
+<div class="row" style="margin-top: calc(100vh - 90vh);" ng-controller="LoginCtrl">
     <div class="col-lg-offset-2 col-md-offset-2 col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Logar</h3>
+                <h3 class="panel-title">Login</h3>
             </div>
+            <div class="alert alert-danger" ng-show="dadosInvalidos"> Login ou senha inválido </div>
+            <div class="alert alert-warning" ng-show="camposObrigatorios"> Os dois campos são obrigatórios </div>
+            <div class="alert alert-success" ng-show="successLoginAlert"> Bem vindo </div>
             <div class="panel-body">
-                <form name="form" method="post" action="/login" novalidate="novalidate">
-                    <div class="form-group">
-                        <label for="login" class="control-label">Login</label>
-                        <input type="text" name="login" id="login" unique-login="unique-login" required="required" ng-model="login_login" autofocus="autofocus" class="form-control"/>
-                        <i ng-show="busy" class="halflings-icon refresh rotating"></i>
-                        <span ng-show="form.login.$dirty && form.login.$error.required" class="help-block">
-                            Please choose a login
-                        </span>
-                        <span ng-show="form.login.$dirty && form.login.$error.isTaken" class="help-block">
-                            login already taken
-                        </span>
-                        <span ng-show="form.login.$dirty && form.login.$error.invalidChars" class="help-block">
-                            login may not contain any non-url-safe characters
-                        </span>
-                    </div>
-                    <div class="form-group">
-                        <label for="senha" class="control-label">Senha</label>
-                        <input type="password" name="senha" id="senha" ng-model="senha_login" required="required" match="verification" class="form-control"/>
-                        <span ng-show="form.senha.$dirty && form.senha.$error.required" class="help-block">
-                            Please enter a senha
-                        </span>
-                    </div>
-                    <input type="submit" value="Sign in" ng-disabled="form.$invalid" class="btn btn-primary"/>
-                    <a class="btn btn-social-icon btn-google-plus" style="float: right; margin: 0 2px">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
-                    <a class="btn btn-social-icon btn-facebook" style="float: right; margin: 0 2px">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                </form>
+                <div class="form-group">
+                    <label class="control-label">Login</label>
+                    <input type="text" ng-model="login" class="form-control" ng-change="closePopup()"/>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Senha</label>
+                    <input type="password" ng-model="password" class="form-control" ng-change="closePopup()"/>
+                </div>
+                <input type="submit" value="Entrar" ng-click="singIn()" class="btn btn-primary"/>
+                <a class="btn btn-social-icon btn-google-plus" style="float: right; margin: 0 2px">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="btn btn-social-icon btn-facebook" style="float: right; margin: 0 2px">
+                    <i class="fa fa-facebook"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -46,48 +39,30 @@
             <div class="panel-heading">
                 <h3 class="panel-title">Cadastre-se</h3>
             </div>
+            <div class="alert alert-success" ng-show="successAlert"> Cadastrado com sucesso </div>
+            <div class="alert alert-danger" ng-show="dadosInvalidosCadastro"> Login ja existe </div>
             <div class="panel-body">
-                <form name="form" method="post" action="/login" novalidate="novalidate">
-                    <div class="form-group">
-                        <label for="login" class="control-label">Login</label>
-                        <input type="text" name="login" id="login" unique-login="unique-login" required="required" ng-model="login" autofocus="autofocus" class="form-control"/>
-                        <i ng-show="busy" class="halflings-icon refresh rotating"></i>
-                        <span ng-show="form.login.$dirty && form.login.$error.required" class="help-block">
-                            Please choose a login
-                        </span>
-                        <span ng-show="form.login.$dirty && form.login.$error.isTaken" class="help-block">
-                            login already taken
-                        </span>
-                        <span ng-show="form.login.$dirty && form.login.$error.invalidChars" class="help-block">
-                            login may not contain any non-url-safe characters
-                        </span>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="control-label">Email</label>
-                        <input type="email" ng-model="email" name="email" id="email" required="required" class="form-control"/>
-                        <span ng-show="form.email.$dirty && form.email.$error.email" class="help-block">
-                            Email is invalid
-                        </span>
-                    </div>
-                    <div class="form-group">
-                        <label for="senha" class="control-label">Senha</label>
-                        <input type="password" name="senha" id="senha" ng-model="senha" required="required" match="verification" class="form-control"/>
-                        <span ng-show="form.senha.$dirty && form.senha.$error.required" class="help-block">
-                            Please enter a senha
-                        </span>
-                    </div>
-                    <div class="form-group">
-                        <label for="verification" class="control-label">Repita a senha</label>
-                        <input type="password" name="verification" id="verification" ng-model="verification" required="required" match="senha" class="form-control"/>
-                        <span ng-show="form.verification.$dirty && form.verification.$error.required" class="help-block">
-                            Please repeat your senha
-                        </span>
-                        <span ng-show="form.verification.$dirty && form.verification.$error.match && !form.verification.$error.required" class="help-block">
-                            senhas don't match
-                        </span>
-                    </div>
-                    <input type="submit" value="Sign up" ng-disabled="form.$invalid" class="btn btn-primary"/>
-                </form>
+                <div class="form-group" ng-class="{'has-error': form.errors.login != undefined}">
+                    <label class="control-label">Login</label>
+                    <input type="text" ng-model="form.login" ng-change="removeError('login')" class="form-control"/>
+                    <p class="help-block"  ng-show="form.errors.login != undefined">{[{ form.errors.login }]}</p>
+                </div>
+                <div class="form-group" ng-class="{'has-error': form.errors.email != undefined}">
+                    <label class="control-label">Email</label>
+                    <input type="text" ng-model="form.email" ng-change="removeError('email')" class="form-control"/>
+                    <p class="help-block"  ng-show="form.errors.email != undefined">{[{ form.errors.email }]}</p>
+                </div>
+                <div class="form-group" ng-class="{'has-error': form.errors.password != undefined}">
+                    <label class="control-label">Senha</label>
+                    <input type="password" ng-model="form.password" ng-change="removeError('password')" class="form-control"/>
+                    <p class="help-block"  ng-show="form.errors.password != undefined">{[{ form.errors.password }]}</p>
+                </div>
+                <div class="form-group" ng-class="{'has-error': form.errors.password2 != undefined}">
+                    <label class="control-label">Repita a senha {[{ form.errors.password2 }]}</label>
+                    <input type="password" ng-model="form.password2" ng-change="removeError('password2')" class="form-control"/>
+                    <p class="help-block"  ng-show="form.errors.password2 != undefined">{[{ form.errors.password2 }]}</p>
+                </div>
+                <input type="submit" value="Registrar" class="btn btn-primary" ng-click="register()"/>
             </div>
         </div>
     </div>

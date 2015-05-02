@@ -31,23 +31,29 @@ angular.module('FastFindApp').directive('fastSidebar', function(){
                 {
                     img: 'glyphicon-home',
                     label: 'Home',
-                    link: '/home'
+                    link: '/home',
+                    is_visible: true
                 },
                 {
                     img: 'glyphicon-heart',
-                    label: 'Lista de Desejos',
-                    link: '/desejos'
+                    label: 'Produtos Desejados',
+                    link: '/produtos/desejados'
                 },
                 {
                     img: 'glyphicon-star',
-                    label: 'Lista de Compra',
-                    link: '/comprados'
+                    label: 'Produtos Comprados',
+                    link: '/produtos/comprados'
                 },
-                //{
-                //    img: 'glyphicon-question-sign',
-                //    label: 'Quem somos',
-                //    link: '/historia'
-                //}
+                {
+                    img: 'glyphicon-barcode',
+                    label: 'Cadastrar produtos',
+                    link: '/cadastro/produtos'
+                },
+                {
+                    img: 'glyphicon-briefcase',
+                    label: 'Cadastrar Loja',
+                    link: '/cadastro/lojas'
+                }
             ]
         }
     }

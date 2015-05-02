@@ -51,3 +51,38 @@
 .list-view.dark-background{
     background-color:#2E8B57;
 }
+
+.btn-dark{
+    width: 150px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.margin-20-0{
+    margin: 20px 0;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+}
+
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.selected-row {
+    background-color: #2E8B57;
+}
+.select-row:hover{
+    background-color: #2E8B57;
+    cursor: pointer;
+}

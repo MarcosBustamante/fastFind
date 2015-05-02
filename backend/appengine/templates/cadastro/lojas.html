@@ -1,0 +1,110 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    FastFind - Cadastro de Lojas
+{% endblock %}
+
+{% block js %}
+    <script src="/static/js/controllers/registerStoreCtrl.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="row clearfix" ng-controller="RegisterStoreCtrl">
+        <div class="col-md-12 column">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-3 column">
+                    <div class="row margin-20-0">
+                        <div class="col-md-12 column text-center">
+                            <img src="http://lorempixel.com/150/150/"/>
+                            <div class="fileUpload btn btn-dark">
+                                <i class="glyphicon glyphicon-search"></i>
+                                <span>Procura</span>
+                                <input type="file" class="upload" ng-model="form.image"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margin-20-0">
+                        <div class="col-md-12 column text-center">
+                            <button class="btn btn-default" ng-click="save(form)">
+                                <i class="glyphicon glyphicon-floppy-disk"></i>
+                                Salvar
+                            </button>       
+                            <button class="btn btn-default" ng-show="form.id != undefined" ng-click="remove(form.id)">
+                                <i class="glyphicon glyphicon-trash"></i>
+                                Deletar
+                            </button>
+                            <button class="btn btn-default" ng-show="form.id != undefined" ng-click="selectShop(-1)">
+                                <i class="glyphicon glyphicon-file"></i>
+                                Novo
+                            </button>                     
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 column">
+                    <div class="row">
+                        <div class="col-md-12 column">
+                            <div class="form-group" ng-class="{'has-error': form.errors.name}">
+                                <label class="control-label">Nome</label>
+                                <input type="text" class="form-control" ng-model="form.name" ng-change="removeError('name')"/>
+                                <p class="help-block" ng-show="form.errors.name">{[{form.errors.name}]}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9 column">
+                            <div class="form-group" ng-class="{'has-error': form.errors.address}">
+                                <label class="control-label">Endereço</label>
+                                <input type="text" class="form-control" ng-model="form.address" ng-change="removeError('address')"/>
+                                <p class="help-block" ng-show="form.errors.address">{[{form.errors.address}]}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 column">
+                            <div class="form-group" ng-class="{'has-error': form.errors.number}">
+                                <label class="control-label">Número</label>
+                                <input type="text" class="form-control" ng-model="form.number" ng-change="removeError('number')"/>
+                                <p class="help-block" ng-show="form.errors.number">{[{form.errors.number}]}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 column">
+                            <div class="form-group" ng-class="{'has-error': form.errors.district}">
+                                <label class="control-label">Bairro</label>
+                                <input type="text" class="form-control" ng-model="form.district" ng-change="removeError('district')"/>
+                                <p class="help-block" ng-show="form.errors.district">{[{form.errors.district}]}</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 column">
+                            <div class="form-group" ng-class="{'has-error': form.errors.city}">
+                                <label class="control-label">Cidade</label>
+                                <input type="text" class="form-control" ng-model="form.city" ng-change="removeError('city')"/>
+                                <p class="help-block" ng-show="form.errors.city">{[{form.errors.city}]}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 column">
+                    <table class="table" style="margin: 30px 0">
+                        <tr>
+                            <th> # </th>
+                            <th> Nome </th>
+                            <th> Bairro </th>
+                            <th> Numero </th>
+                        </tr>
+                        <tr ng-repeat="store in scrud.getShops()" ng-click="selectShop($index)"
+                            class="select-row" ng-class="{'selected-row': form.id == store.id}">
+                            <td> {[{$index}]} </td>
+                            <td> {[{store.name}]} </td>
+                            <td> {[{store.district}]} </td>
+                            <td> {[{store.number}]} </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
