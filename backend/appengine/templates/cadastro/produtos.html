@@ -4,6 +4,110 @@
     FastFind - Cadastro de Produtos
 {% endblock %}
 
+{% block js %}
+    <script src="/static/js/controllers/registerProductCtrl.js"></script>
+{% endblock %}
+
 {% block content %}
-    Cadastro de Produtos
+    <div class="row clearfix" ng-controller="RegisterProductCtrl">
+        <div ng-show="pcrud.getStores()" class="col-md-12 column">
+            <div class="row column">
+                <div class="col-md-2 column" ng-repeat="image in form.images track by $index">
+                    <div class="text-center">
+                        <img ng-show="image" ng-src="{[{image}]}"/>
+                        <img ng-hide="image" src="http://lorempixel.com/150/150/"/>
+                        <div class="fileUpload btn btn-dark">
+                            <i class="glyphicon glyphicon-search"></i>
+                            <span>Procura</span>
+                            <input type="file" class="upload" ng-model="form.image"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row col-md-12">
+                <div class="row">
+                    <div class=" col-md-offset-1 col-md-5 column">
+                        <div class="form-group" ng-class="{'has-error': form.errors.name}">
+                            <label class="control-label">Nome</label>
+                            <input type="text" class="form-control" ng-model="form.name" ng-change="removeError('name')"/>
+                            <p class="help-block" ng-show="form.errors.name">{[{form.errors.name}]}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 column">
+                        <div class="form-group" ng-class="{'has-error': form.errors.price}">
+                            <label class="control-label">Preço</label>
+                            <input type="text" class="form-control" ng-model="form.price" ng-change="removeError('price')"/>
+                            <p class="help-block" ng-show="form.errors.district">{[{form.errors.price}]}</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-2 column">
+                        <div class="form-group" ng-class="{'has-error': form.errors.store}">
+                            <label class="control-label">Loja</label>
+                            <select class="form-control"
+                                    ng-model="form.store"
+                                    ng-change="removeError('price')"
+                                    ng-options="store.id as store.name for store in pcrud.getStores()"></select>
+                            <p class="help-block" ng-show="form.errors.store">{[{form.errors.store}]}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 column">
+                        <div class="form-group" ng-class="{'has-error': form.errors.description}">
+                            <label class="control-label">Descrição</label>
+                            <textarea rows="3" class="form-control" ng-model="form.description" ng-change="removeError('description')"></textarea>
+                            <p class="help-block" ng-show="form.errors.address">{[{form.errors.description}]}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-md-12 column">
+                <div class="text-center">
+                    <button class="btn btn-default" ng-click="save()">
+                        <i class="glyphicon glyphicon-floppy-disk"></i>
+                        Salvar
+                    </button>
+                    <button class="btn btn-default" ng-show="form.id != undefined" ng-click="remove()">
+                        <i class="glyphicon glyphicon-trash"></i>
+                        Deletar
+                    </button>
+                    <button class="btn btn-default" ng-show="form.id != undefined" ng-click="selectProduct(-1)">
+                        <i class="glyphicon glyphicon-file"></i>
+                        Novo
+                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 column">
+                    <table class="table" style="margin: 30px 0">
+                        <tr>
+                            <th> # </th>
+                            <th> Nome </th>
+                            <th> Descrição </th>
+                            <th> Preço </th>
+                        </tr>
+                        <tr ng-repeat="product in pcrud.getProducts()" ng-click="selectProduct($index)"
+                            class="select-row" ng-class="{'selected-row': form.id == product.id}">
+                            <td> {[{$index}]} </td>
+                            <td> {[{product.name}]} </td>
+                            <td> {[{product.description}]} </td>
+                            <td> {[{product.price}]}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div ng-hide="pcrud.getStores()">
+            <div class="row column">
+                Opss... Você precisa cadastrar uma loja antes....
+                <a class="btn btn-default" href="/cadastro/lojas">Cadastrar loja</a>
+            </div>
+        </div>
+    </div>
 {% endblock %}

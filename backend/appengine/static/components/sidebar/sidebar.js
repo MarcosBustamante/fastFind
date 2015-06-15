@@ -26,6 +26,14 @@ angular.module('FastFindApp').directive('fastSidebar', function(){
         controller: function($scope, SidebarModel){
             var sbm = $scope.sbm = SidebarModel;
             $scope.FF = window.FF;
+            $scope.getShortName = function (name){
+                if(name == undefined){
+                    return "Perfil :)"
+                }
+                name = name.split(' ');
+                name = name.splice(0,2);
+                return name.join(" ");
+            };
 
             $scope.icons = [
                 {
