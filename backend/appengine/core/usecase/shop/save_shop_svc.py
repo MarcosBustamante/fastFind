@@ -8,14 +8,11 @@ __author__ = 'bustamante'
 def save(user, form):
     _validate_form(form)
     if 'id' in form:
-        Shop.update(**form)
-        shop_dictj = {}
+        shop = Shop.update(**form)
     else:
         shop = Shop.save(**form)
         RShopXUser.save(user.key, shop.key)
-        shop_dictj = shop.to_dict_json()
-
-    return shop_dictj
+    return shop.to_dict_json()
 
 
 def _validate_form(form):

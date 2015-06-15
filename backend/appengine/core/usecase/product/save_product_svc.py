@@ -7,20 +7,18 @@ __author__ = 'bustamante'
 
 def save(form):
     _validate_form(form)
-    shop_key = Shop.get_by_id(form['store']).key
+    shop_key = Shop.get_by_id(form['store'])
 
     if shop_key is None:
-        Exception('A loja não existe :(')
+        raise Exception('A loja não existe :(')
 
+    shop_key = shop_key.key
     if 'id' in form:
-        Product.update(**form)
-        product_dictj = {}
+        product = Product.update(**form)
     else:
         product = Product.save(**form)
         RProductXShop.save(product.key, shop_key)
-        product_dictj = product.to_dict_json()
-
-    return product_dictj
+    return product.to_dict_json()
 
 
 def _validate_form(form):

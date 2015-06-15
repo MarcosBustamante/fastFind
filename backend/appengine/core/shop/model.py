@@ -56,6 +56,7 @@ class Shop(ndb.Model):
         shop.district = kwargs['district']
         shop.city = kwargs['city']
         shop.put()
+        return shop
     
     
 class RShopXUser(ndb.Model):

@@ -27,22 +27,23 @@ class Product(ndb.Model):
     @classmethod
     def save(cls, **kwargs):
         kwargs = _normalize(kwargs)
-        shop = Product()
-        shop.images = kwargs.get('images')
-        shop.name = kwargs['name']
-        shop.price = kwargs['price']
-        shop.description = kwargs['description']
-        shop.put()
-        return shop
+        product = Product()
+        product.images = kwargs.get('images')
+        product.name = kwargs['name']
+        product.price = kwargs['price']
+        product.description = kwargs['description']
+        product.put()
+        return product
 
     @classmethod
     def update(cls, **kwargs):
-        shop = Product.get_by_id(kwargs['id'])
-        shop.images = kwargs.get('images')
-        shop.name = kwargs['name']
-        shop.price = kwargs['price']
-        shop.description = kwargs['description']
-        shop.put()
+        product = Product.get_by_id(kwargs['id'])
+        product.images = kwargs.get('images')
+        product.name = kwargs['name']
+        product.price = kwargs['price']
+        product.description = kwargs['description']
+        product.put()
+        return product
 
 
 class RProductXShop(ndb.Model):
