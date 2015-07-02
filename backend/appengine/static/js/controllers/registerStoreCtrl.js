@@ -7,7 +7,7 @@ angular.module('FastFindApp').factory('StoreCrud', function(Ajax){
 
     var _getEmptyForm = function(){
         return {
-            image: undefined,
+            image: new FormData(),
             name: undefined,
             address: undefined,
             number: undefined,
@@ -63,14 +63,27 @@ angular.module('FastFindApp').factory('StoreCrud', function(Ajax){
 
         if(jsutils.object_is_empty(form.errors)) {
             delete form['errors'];
-            var parameters = {'form': angular.toJson(form)};
-            Ajax.post('/cadastro/lojas/salvar', parameters).success(function(result){
-                if(!jsutils.object_is_empty(result)) {
-                    shops.push(result);
-                }
-            });
+            if (jsutils.object_is_empty(form.image)) {
+                _saveForm(form);
+            } else {
+                Ajax.get('/updown').success(function(result){
+                    Ajax.post_file(result.upload_url, form.image).success(function(result){
+                        form.image = result.image_link;
+                        _saveForm(form);
+                    });
+                })
+            }
         }
     };
+
+    function _saveForm(form){
+        var parameters = {'form': angular.toJson(form)};
+        Ajax.post('/cadastro/lojas/salvar', parameters).success(function(result){
+            if(!jsutils.object_is_empty(result)) {
+                shops.push(result);
+            }
+        });
+    }
 
     var remove = function(shop_id){
         Ajax.post("/cadastro/lojas/deletar", {'id': shop_id}).success(function(result){
@@ -146,4 +159,8 @@ angular.module('FastFindApp').controller('RegisterStoreCtrl', function($scope, S
         if($scope.form.errors)
             delete $scope.form.errors[formName];
     };
+
+    $scope.saveFile = function(file){
+        $scope.form.image.append("file", file.files[0]);
+    }
 });

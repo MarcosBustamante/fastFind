@@ -19,7 +19,7 @@
                             <div class="fileUpload btn btn-dark">
                                 <i class="glyphicon glyphicon-search"></i>
                                 <span>Procura</span>
-                                <input type="file" class="upload" ng-model="form.image"/>
+                                <input type="file" class="upload" name="file" onchange="angular.element(this).scope().saveFile(this)"/>
                             </div>
                         </div>
                     </div>
